@@ -1,0 +1,64 @@
+version: 3
+created_by: gemini-ai
+domain: papaya-ai
+
+seed_examples:
+  - context: Papaya AI è un agente di intelligenza artificiale proattivo progettato per ottimizzare e automatizzare i flussi di lavoro dei team moderni, agendo in modo predittivo anziché reattivo.
+    questions_and_answers:
+      - question: Che cos'è Papaya AI?
+        answer: È un agente AI proattivo che ottimizza e automatizza i flussi di lavoro.
+      - question: Qual è la differenza con un assistente tradizionale?
+        answer: Agisce in modo predittivo, anticipando le necessità invece di rispondere solo ai comandi.
+      - question: Per chi è utile Papaya AI?
+        answer: È ideale per team di sviluppo software, agenzie di marketing, startup e team operativi.
+
+  - context: La gestione proattiva dei task permette a Papaya AI di analizzare i task nel loro contesto, rilevare rischi e suggerire azioni successive.
+    questions_and_answers:
+      - question: Papaya AI si limita a elencare i task?
+        answer: No, li analizza nel contesto per identificare rischi e dipendenze.
+      - question: Cosa succede se un task è in ritardo?
+        answer: Papaya AI rileva il rischio e notifica il responsabile e il project manager.
+      - question: Può suggerire cosa fare dopo?
+        answer: Sì, al completamento di un task può suggerire la creazione di quello successivo.
+
+  - context: Papaya AI permette di creare flussi di lavoro cross-piattaforma (Workflows) basati su un sistema di Trigger e Azioni, senza bisogno di scrivere codice.
+    questions_and_answers:
+      - question: È possibile automatizzare processi tra diversi strumenti?
+        answer: Sì, tramite i Workflows che collegano diverse piattaforme.
+      - question: Come si crea un'automazione?
+        answer: Tramite un sistema visuale basato su "Trigger" (evento scatenante) e "Azione" (conseguenza).
+      - question: Fai un esempio di workflow.
+        answer: il trigger è un bug critico viene creato su Jira e l'azione è che Papaya AI invia una notifica prioritaria su Slack.
+
+  - context: Papaya AI si integra nativamente con decine di strumenti leader del settore, inclusi Jira, Trello, Slack, GitHub e Google Workspace.
+    questions_and_answers:
+      - question: Con quali strumenti di project management si integra?
+        answer: Si integra con Jira, Trello, Asana, Monday.com e ClickUp.
+      - question: Supporta strumenti di comunicazione?
+        answer: Sì, si integra con Slack e Microsoft Teams.
+      - question: Come si aggiunge una nuova integrazione?
+        answer: Dal pannello di controllo, si seleziona l'app e si segue la procedura di autenticazione OAuth2.
+
+  - context: Gli sviluppatori possono estendere le funzionalità di Papaya AI tramite un'API REST, disponibile per tutti i piani a pagamento.
+    questions_and_answers:
+      - question: Papaya AI ha un'API per sviluppatori?
+        answer: Sì, un'API REST per integrare Papaya in sistemi custom.
+      - question: Come ci si autentica per usare l'API?
+        answer: Tramite una chiave API personale da inserire nell'header `Authorization`.
+      - question: Cosa permette di fare l'API?
+        answer: Permette di recuperare e creare task, ottenere riepiloghi dei progetti e attivare workflow.
+
+  - context: La sicurezza è una priorità per Papaya AI, che utilizza crittografia end-to-end (AES-256) ed è conforme al GDPR.
+    questions_and_answers:
+      - question: I dati aziendali sono al sicuro?
+        answer: Sì, tutti i dati sono protetti da crittografia sia in transito che a riposo.
+      - question: Papaya AI è conforme alle normative sulla privacy?
+        answer: Sì, è conforme a GDPR e CCPA.
+      - question: Papaya AI legge il contenuto dei file di progetto?
+        answer: No, analizza solo i metadati (titoli, commenti, scadenze) senza accedere al contenuto sensibile.
+
+document_outline:
+  repo: https://github.com/DavidRiboldi/papaya
+  commit: 2a3316e3607a0af3f2a2bbcd3fcb51d9a5ac08e0
+  patterns:
+    - papaya_ai_docs.md
